@@ -1,0 +1,71 @@
+.hero {
+	align-items: center;
+	background: #242528;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0 0 85px;
+	position: relative;
+	text-align: center;
+	
+	&-logo {
+		margin: 0 0 60px;
+	}
+	
+	h1 {
+		color: #fff;
+		font: 300 44px/52px $font-MessinaSans;
+		letter-spacing: -1.3px;
+		margin: 0;
+		
+		@include desktop {
+			font-size: 72px;
+			line-height: 80px;
+			margin: 0 auto;
+			max-width: 840px;
+		}
+		
+		span {
+			color: $color-red;
+			font-family: $font-MessinaSansSerif;
+			font-style: italic;
+		}
+		
+		div {
+			display: inline;
+		}
+	}
+	
+	&-scroll {
+		align-items: center;
+		bottom: 40px;
+		cursor: pointer;
+		display: flex;
+		left: calc(50% - 16px);
+		justify-content: center;
+		height: 32px;
+		position: absolute;
+		
+		svg {
+			animation: scroll 2s infinite;
+			position: relative;
+		}
+	}
+	
+	@keyframes scroll {
+		0% {
+			opacity: 1;
+			top: -8px;
+		}
+		
+		50% {
+			opacity: .4;
+			top: 8px;
+		}
+		
+		100% {
+			opacity: 1;
+			top: -8px;
+		}
+	}
+}

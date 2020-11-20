@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box;
+
+	*::before, *::after {
+		box-sizing: border-box;
+	}
+
+	&:not(iframe) {
+		transition: 0.25s ease;
+		transition-property: background, border, color, left, margin, padding, right, opacity;
+	}
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+input[type="submit"]:focus {
+	outline: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img,
+video,
+audio {
+	max-width: 100%;
+	height: auto;
+}
+
+label,
+button,
+input,
+select {
+	cursor: pointer;
+}
+
+label[for] {
+	cursor: pointer;
+}
+
+abbr[title],
+acronym[title],
+dfn {
+	cursor: help;
+}
+
+textarea {
+	resize: vertical;
+}
+
+[disabled] {
+	cursor: default;
+}
+
+[aria-disabled="true"] {
+	cursor: default;
+	pointer-events: none;
+}
+
+.no-js button[type="button"] {
+	display: none;
+}
+
+sub,
+sup {
+	line-height: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #F9F8F7;
+	color: $color-black;
+	font-family: $font-MessinaSans;
+	font-size: 16px;
+	line-height: 1.5;
+	min-height: 100vh;
+	overscroll-behavior: none;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	transition: 0s;
+	
+	&.fixed {
+		overflow: hidden;
+	}
+}
+
+::selection {
+	background: $color-red;
+	color: white;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+textarea {
+	-webkit-appearance: none;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid $color-black;
+	border-radius: 0;
+	color: $color-black;
+	cursor: auto;
+	font-family: $font-MessinaSans;
+	font-size: 18px;
+	height: 47px;
+	letter-spacing: -.4px;
+	margin: 0 0 36px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	
+	&:focus {
+		outline: none;
+	}
+	
+	@include placeholder-color(rgba($color-black, .5));
+	
+	&.not-valid {
+		border-color: #f00;
+	}
+}
+
+select {
+	-webkit-appearance: none;
+	
+	&:focus::-ms-value {
+		color: #12161e;
+		background: #fff;
+	}
+}
+
+textarea {
+	background: #F9F8F7;
+	border: 1px solid #D7D7D7;
+	height: 120px;
+	margin: 0 0 20px;
+	padding: 16px 0 0 16px;
+	resize: none;
+}
+
+form {
+	
+	label {
+		color: rgba($color-black,.5);
+		display: inline-flex;
+		font: 18px/23px $font-MessinaSans;
+		margin: 12px 0 11px;
+	}
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	
+	&:not([href]){
+		cursor: initial;
+	}
+}
+
+h1 {
+	font-size: 36px;
+	margin: 0 0 32px;
+	
+	@include desktop() {
+		font-size: 42px;
+		line-height: 62px;
+	}
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 0 18px;
+	
+	@include desktop() {
+		font-size: 36px;
+		line-height: 40px;
+	}
+}
+
+p {
+	font-size: 16px;
+	line-height: 28px;
+	margin: 0 0 24px;
+	
+	&:last-child{
+		margin: 0;
+	}
+}
+
+button, input, label, select {
+	cursor: auto;
+}
+
+strong {
+	font-weight: 600;
+}
+
+i {
+	font-family: $font-MessinaSansSerif;
+}

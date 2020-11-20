@@ -1,0 +1,274 @@
+.team {
+	background: #fff;
+	padding: 80px 0 40px;
+	
+	@include desktop {
+		padding: 140px 0 50px;
+	}
+	
+	.title {
+		padding: 0 0 73px;
+	}
+	
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -24px;
+		
+		@include tablet {
+			margin: 0 auto;
+			max-width: 800px;
+		}
+	}
+	
+	&.team-column {
+		padding: 80px 0 40px;
+		
+		@include desktop {
+			padding: 120px 0 111px;
+		}
+		
+		@include desktop {
+			.title {
+				padding: 0 0 100px;
+			}
+		}
+		
+		.team-wrapper {
+			justify-content: flex-start;
+			margin: -13px -8px 0;
+			max-width: initial;
+			
+			@include desktop {
+				margin: 0 -30px;
+			}
+		}
+		
+		.team-item {
+			margin: 0 8px 40px;
+			width: calc(50% - 16px);
+			
+			@include tablet {
+				margin: 0 30px 46px;
+				max-width: 240px;
+				width: calc(50% - 60px);
+			}
+			
+			@include desktop {
+				width: calc(25% - 60px);
+			}
+			
+			.team-photo {
+				display: block;
+				height: auto;
+				margin: 0 0 20px;
+				
+				@include desktop {
+					margin: 0 0 18px;
+				}
+			}
+			
+			h4 {
+				letter-spacing: .9px;
+				margin: 0 0 6px;
+				text-align: left;
+				
+				@include desktop {
+					margin: 0 0 8px;
+				}
+			}
+			
+			p {
+				letter-spacing: .2px;
+				line-height: 23px;
+				
+				@include desktop {
+					line-height: 26px;
+				}
+			}
+			
+			img {
+				margin: 0;
+			}
+		}
+	}
+	
+	&-item {
+		margin: 0 0 40px;
+		width: calc(100% / 3);
+		
+		@include tablet {
+			margin: 0 40px 46px;
+			width: 120px;
+		}
+		
+		h4 {
+			font: 17px/25px $font-MessinaSans;
+			letter-spacing: -0.02em;
+			margin: 0;
+			text-align: center;
+			
+			@include desktop {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+	}
+	
+	&-photo {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 46px;
+		margin: 0 0 5px;
+		
+		img {
+			display: block;
+			height: auto;
+			margin: auto;
+			max-width: 44px;
+			
+			@include desktop {
+				max-width: 60px;
+			}
+		}
+	}
+	
+	&-list {
+		padding: 122px 0 115px;
+		
+		@include desktop {
+			padding: 136px 0 115px;
+		}
+		
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -8px;
+			
+			@include desktop {
+				margin: 6px -60px 0;
+				padding: 30px 0 0;
+			}
+		}
+		
+		&-item {
+			align-items: flex-start;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 0 30px;
+			padding: 0 8px;
+			width: 50%;
+			
+			@include desktop {
+				align-items: center;
+				flex-wrap: nowrap;
+				margin: 0 0 36px;
+				padding: 0 60px;
+			}
+			
+			&:hover {
+				.team-list-name {
+					font-family: $font-MessinaSansSerif;
+				}
+				
+				.team-list-position {
+					color: $color-black;
+				}
+			}
+		}
+		
+		&-photo {
+			margin: 0 0 10px;
+			width: 100%;
+			
+			@include desktop {
+				flex-wrap: nowrap;
+				margin: 0 15px 0 0;
+				width: auto;
+			}
+			
+			img {
+				display: block;
+				height: auto;
+				width: 30px;
+				
+				@include desktop {
+					width: 24px;
+				}
+			}
+		}
+		
+		&-name {
+			color: $color-black;
+			font: 20px/24px $font-MessinaSans;
+			letter-spacing: -0.02em;
+			margin: 0 0 4px;
+			width: 100%;
+			
+			@include desktop {
+				font-size: 22px;
+				line-height: 26px;
+				margin-left: 0;
+				padding: 0 15px 0 0;
+				width: auto;
+			}
+		}
+		
+		&-position {
+			color: $color-black;
+			font: 14px/20px $font-MessinaSans;
+			letter-spacing: -0.01em;
+			
+			@include desktop {
+				color: #808080;
+				font-size: 16px;
+				letter-spacing:  initial;
+				line-height: 20px;
+				margin-left: auto;
+				margin-top: auto;
+			}
+		}
+	}
+	
+	&-reviews {
+		padding: 0 0 60px;
+		
+		@include desktop {
+			padding: 0 0 120px;
+		}
+		
+		&-wrapper {
+			margin: 0 -60px;
+			
+			@include desktop {
+				align-items: flex-end;
+				display: flex;
+			}
+		}
+		
+		&-column {
+			border-bottom: 1px solid $color-black;
+			letter-spacing: -.2px;
+			margin: 0 60px 60px;
+			width: calc(100% - 120px);
+			
+			@include desktop {
+				margin: 0 60px;
+				width: calc(50% - 120px);
+			}
+			
+			p {
+				font: 20px/30px $font-MessinaSans;
+				margin: 0 0 30px;
+			}
+		}
+		
+		&-author {
+			font: 14px/17px $font-MessinaSans;
+			letter-spacing: -.1px;
+			padding: 0 0 12px;
+		}
+	}
+}

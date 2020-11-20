@@ -1,0 +1,75 @@
+// Placeholder color
+@mixin placeholder-color($color) {
+	&:-moz-placeholder {
+		color: $color !important;
+		opacity: 1 !important;
+	}
+	&::-moz-placeholder {
+		color: $color !important;
+		opacity: 1 !important;
+	}
+	&:-ms-input-placeholder {
+		color: $color !important;
+		opacity: 1 !important;
+	}
+	&::-webkit-input-placeholder {
+		color: $color !important;
+		opacity: 1 !important;
+	}
+
+	&:focus:-moz-placeholder {
+		color: transparent !important;
+	}
+	&:focus::-moz-placeholder {
+		color: transparent !important;
+	}
+	&:focus:-ms-input-placeholder {
+		color: transparent !important;
+	}
+	&:focus::-webkit-input-placeholder {
+		color: transparent !important;
+	}
+}
+
+// Media queries
+@mixin media($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+@mixin media-min($size) {
+	@media (min-width: $size) {
+		@content;
+	}
+}
+
+@mixin media-max($size) {
+	@media (max-width: $size) {
+		@content;
+	}
+}
+
+@mixin desktop-extra() {
+	@media (min-width: $desktop-extra) {
+		@content;
+	}
+}
+
+@mixin desktop() {
+	@media (min-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (min-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (min-width: $mobile) {
+		@content;
+	}
+}

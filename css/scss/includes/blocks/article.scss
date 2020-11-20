@@ -1,0 +1,95 @@
+.article {
+	margin: 0 0 64px;
+	
+	@include tablet {
+		display: flex;
+		margin: 0 0 60px;
+	}
+	
+	&-img {
+		max-width: 100%;
+		
+		@include tablet {
+			max-width: 312px;
+			min-width: 312px;
+		}
+		
+		@include desktop {
+			max-width: 460px;
+			min-width: 460px;
+		}
+		
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+	
+	&-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 12px 0 0;
+		
+		@include tablet {
+			padding: 0 0 0 40px;
+			width: calc(100% - 312px);
+		}
+		
+		@include desktop {
+			width: calc(100% - 460px);
+		}
+	}
+	
+	&-date {
+		color: #808080;
+		font: 600 13px/16px $font-MessinaSansMono;
+		margin: 0 0 10px;
+		
+		@include desktop {
+			margin: 0 0 18px;
+		}
+	}
+	
+	&-more {
+		color: $color-black;
+		font: 600 13px/18px $font-MessinaSans;
+		
+		@include desktop {
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	
+	h2 {
+		font: 24px/30px $font-MessinaSans;
+		letter-spacing: -0.02em;
+		margin: 0 0 12px;
+		
+		@include desktop {
+			font-style: 26px;
+			line-height: 40px;
+			margin: 0 0 13px;
+		}
+	}
+	
+	p {
+		font: 17px/25px $font-MessinaSans;
+		margin: 0 0 10px;
+		
+		@include desktop {
+			font-size: 17px;
+			line-height: 25px;
+			margin: 0 0 13px;
+		}
+	}
+}
+
+.articles {
+	margin: -79px 0 0;
+	
+	@include desktop {
+		margin: 0;
+	}
+}

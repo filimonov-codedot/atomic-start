@@ -1,0 +1,89 @@
+// Fonts
+@font-face {
+	font-family: 'Manrope';
+	src:url('../fonts/Manrope/manrope-light.otf') format("opentype"),
+	url('../fonts/Manrope/manrope-light.woff2') format("woff2"),
+	url('../fonts/Manrope/manrope-light.woff') format("woff");
+	font-weight:300;
+	font-style:normal
+}
+
+@font-face {
+	font-family: 'MessinaSans';
+	src:url('../fonts/MessinaSans/MessinaSans-Light.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSans/MessinaSans-Light.ttf') format("truetype"),
+	url('../fonts/MessinaSans/MessinaSans-Light.woff2') format("woff2"),
+	url('../fonts/MessinaSans/MessinaSans-Light.woff') format("woff");
+	font-weight:300;
+	font-style:normal
+}
+
+@font-face {
+	font-family: 'MessinaSans';
+	src:url('../fonts/MessinaSans/MessinaSans-Regular.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSans/MessinaSans-Regular.ttf') format("truetype"),
+	url('../fonts/MessinaSans/MessinaSans-Regular.woff2') format("woff2"),
+	url('../fonts/MessinaSans/MessinaSans-Regular.woff') format("woff");
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+	font-family: 'MessinaSans';
+	src:url('../fonts/MessinaSans/MessinaSans-SemiBold.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSans/MessinaSans-SemiBold.ttf') format("truetype"),
+	url('../fonts/MessinaSans/MessinaSans-SemiBold.woff2') format("woff2"),
+	url('../fonts/MessinaSans/MessinaSans-SemiBold.woff') format("woff");
+	font-weight:600;
+	font-style:normal
+}
+
+@font-face {
+	font-family: 'MessinaSans';
+	src:url('../fonts/MessinaSans/MessinaSans-Bold.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSans/MessinaSans-Bold.ttf') format("truetype"),
+	url('../fonts/MessinaSans/MessinaSans-Bold.woff2') format("woff2"),
+	url('../fonts/MessinaSans/MessinaSans-Bold.woff') format("woff");
+	font-weight:700;
+	font-style:normal
+}
+
+@font-face {
+	font-family: 'MessinaSansSerif';
+	src:url('../fonts/MessinaSerif/MessinaSerif-LightItalic.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSerif/MessinaSerif-LightItalic.ttf') format("truetype"),
+	url('../fonts/MessinaSerif/MessinaSerif-LightItalic.woff2') format("woff2"),
+	url('../fonts/MessinaSerif/MessinaSerif-LightItalic.woff') format("woff");
+	font-weight:300;
+	font-style:italic
+}
+
+@font-face {
+	font-family: 'MessinaSansSerif';
+	src:url('../fonts/MessinaSerif/MessinaSerif-RegularItalic.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSerif/MessinaSerif-RegularItalic.ttf') format("truetype"),
+	url('../fonts/MessinaSerif/MessinaSerif-RegularItalic.woff2') format("woff2"),
+	url('../fonts/MessinaSerif/MessinaSerif-RegularItalic.woff') format("woff");
+	font-weight:400;
+	font-style:italic
+}
+
+@font-face {
+	font-family: 'MessinaSansSerif';
+	src:url('../fonts/MessinaSerif/MessinaSerif-Regular.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSerif/MessinaSerif-Regular.ttf') format("truetype"),
+	url('../fonts/MessinaSerif/MessinaSerif-Regular.woff2') format("woff2"),
+	url('../fonts/MessinaSerif/MessinaSerif-Regular.woff') format("woff");
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+	font-family: 'MessinaSansMono';
+	src:url('../fonts/MessinaSansMono/MessinaSansMono-SemiBold.eot?') format("embedded-opentype"),
+	url('../fonts/MessinaSansMono/MessinaSansMono-SemiBold.ttf') format("truetype"),
+	url('../fonts/MessinaSansMono/MessinaSansMono-SemiBold.woff2') format("woff2"),
+	url('../fonts/MessinaSansMono/MessinaSansMono-SemiBold.woff') format("woff");
+	font-weight:600;
+	font-style:normal
+}

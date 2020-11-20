@@ -1,0 +1,54 @@
+.title {
+	padding: 0 0 82px;
+	text-align: center;
+	
+	@include desktop {
+		padding: 0 0 90px;
+	}
+	
+	h3 {
+		font: 600 13px/25px $font-MessinaSansMono;
+		margin: 0 0 24px;
+		text-transform: uppercase;
+		
+		@include desktop {
+			font-size: 14px;
+			line-height: 25px;
+		}
+	}
+	
+	h2 {
+		color: #000;
+		font: 300 34px/41px $font-MessinaSans;
+		letter-spacing: -1.5px;
+		margin: 0 0 24px;
+		
+		@include desktop {
+			font-size: 54px;
+			line-height: 56px;
+			margin: 0 0 30px;
+		}
+		
+		&:last-child {
+			margin: 0;
+		}
+	}
+	
+	p {
+		font: 17px/25px $font-MessinaSans;
+		letter-spacing: -.2px;
+		margin: 0 auto;
+		max-width: 720px;
+		
+		@include desktop {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	
+	.btn {
+		margin: 56px auto 0;
+		max-width: 240px;
+		width: 100%;
+	}
+}

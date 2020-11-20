@@ -1,0 +1,148 @@
+.news-page {
+	padding: 40px 0 150px;
+	
+	@include desktop {
+		padding: 103px 0 150px;
+	}
+	
+	&-header {
+		align-items: center;
+		border-bottom: 1px solid #BFBFBF;
+		display: flex;
+		margin: 0 0 103px;
+		padding: 0 0 16px;
+		position: relative;
+		
+		@include desktop {
+			margin: 0 0 60px;
+			padding: 0 0 7px;
+		}
+	}
+	
+	&-select {
+		left: 0;
+		margin-left: auto;
+		position: absolute;
+		top: 90px;
+		
+		@include desktop {
+			position: static;
+		}
+	}
+	
+	&-links {
+		
+		ul {
+			display: flex;
+		}
+		
+		li {
+			margin: 0 36px 0 0;
+			opacity: .2;
+			position: relative;
+			
+			@include desktop {
+				margin: 0 57px 0 0;
+			}
+			
+			&::after {
+				background: #000;
+				bottom: -17px;
+				content: '';
+				height: 2px;
+				left: 0;
+				position: absolute;
+				transition: all .25s ease;
+				width: 0;
+				
+				@include desktop {
+					bottom: -8px;
+				}
+			}
+			
+			&.current,
+			&:hover {
+				opacity: 1;
+				
+				&::after {
+					width: 100%;
+				}
+			}
+			
+			a {
+				color: #242528;
+				font: 300 34px/41px $font-MessinaSans;
+				letter-spacing: -0.02em;
+				
+				@include desktop {
+					font-style: 50px;
+					line-height: 80px;
+				}
+			}
+		}
+	}
+	
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px;
+		
+		.news-item {
+			margin: 0 30px 65px;
+			width: calc(100% - 60px);
+			
+			@include tablet {
+				width: calc(100% / 2 - 60px);
+			}
+			
+			@include desktop {
+				margin: 0 30px 90px;
+				width: calc(100% / 3 - 60px);
+			}
+			
+			&-img {
+				padding: 0 0 15px;
+				
+				img {
+					display: block;
+					height: auto;
+					max-width: 100%;
+				}
+			}
+			
+			&-info {
+				display: flex;
+				font: 700 13px/16px $font-MessinaSansMono;
+				padding: 0 0 10px;
+			}
+			
+			&-type {
+				margin-right: 15px;
+			}
+			
+			&-date {
+				color: #808080;
+				margin-left: 15px;
+			}
+			
+			&-link {
+				background: url("../img/dest/icon-link.svg") no-repeat right -3px;
+				border-bottom: 1px solid #808080;
+				color: $color-black;
+				display: flex;
+				font: 18px/22px $font-MessinaSansSerif;
+				padding: 0 0 9px;
+			}
+			
+			h2 {
+				font: 20px/30px $font-MessinaSans;
+				letter-spacing: -0.02em;
+				margin: 0 0 10px;
+				
+				@include desktop {
+					margin: 0 0 19px;
+				}
+			}
+		}
+	}
+}

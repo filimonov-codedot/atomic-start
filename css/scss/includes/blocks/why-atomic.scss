@@ -1,0 +1,67 @@
+.why-atomic {
+	background: #fff;
+	padding: 80px 0 0;
+	
+	@include desktop {
+		padding: 106px 0 0;
+	}
+	
+	&-articles {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 0 80px;
+		
+		@include tablet {
+			margin: 0 -30px;
+		}
+		
+		@include desktop {
+			padding: 11px 0 99px;
+		}
+	}
+	
+	&-article {
+		padding: 0 0 30px;
+		
+		@include tablet {
+			flex: 1 0 calc(100% / 3);
+			padding: 0 30px;
+		}
+		
+		&-number {
+			align-items: center;
+			background: $color-red;
+			border-radius: 50%;
+			color: #fff;
+			display: flex;
+			height: 44px;
+			font: 600 22px $font-MessinaSans;
+			justify-content: center;
+			margin: 0 0 20px;
+			width: 44px;
+			text-align: center;
+		}
+		
+		h4 {
+			font: 20px/24px $font-MessinaSans;
+			letter-spacing: -0.02em;
+			margin: 0 0 8px;
+			
+			@include desktop {
+				font-size: 22px;
+				line-height: 26px;
+				margin: 0 0 10px;
+			}
+		}
+		
+		p {
+			font: 15px/23px $font-MessinaSans;
+			letter-spacing: -0.01em;
+			
+			@include desktop {
+				font-size: 17px;
+				line-height: 25px;
+			}
+		}
+	}
+}

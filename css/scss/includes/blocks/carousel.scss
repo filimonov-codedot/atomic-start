@@ -1,0 +1,39 @@
+.carousel {
+	overflow: hidden;
+	
+	&-wrapper {
+		display: flex;
+		left: 50%;
+		justify-content: center;
+		position: relative;
+		transform: translateX(-50%);
+		
+		&::before {
+			background: #fff;
+			bottom: 0;
+			content: '';
+			left: 0;
+			height: 50%;
+			position: absolute;
+			right: 0;
+		}
+	}
+	
+	&-item {
+		min-width: 278px;
+		margin: 0 8px;
+		position: relative;
+		z-index: 5;
+		
+		@include desktop {
+			min-width: 294px;
+		}
+		
+		img {
+			border-radius: 8px;
+			display: block;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.photos {
+	background: #fff;
+	overflow: hidden;
+	padding: 0 0 80px;
+	
+	@include desktop {
+		padding: 0 0 96px;
+	}
+	
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	
+	&-line {
+		display: flex;
+		flex-wrap: wrap;
+		height: 146px;
+		margin: 0 0 0 -72px;
+		overflow: hidden;
+		min-width: calc(100% + 146px);
+		
+		@include tablet {
+			flex-wrap: nowrap;
+			height: auto;
+			margin-left: -35px;
+			min-width: initial;
+			overflow: visible;
+			
+			&:nth-child(2) {
+				margin-left: -65px;
+			}
+		}
+	}
+	
+	.photo {
+		height: 72px;
+		margin: 0 1px 1px 0;
+		width: 72px;
+		
+		@include tablet {
+			height: 80px;
+			margin: 4px;
+			width: 120px;
+		}
+		
+		img {
+			display: block;
+			height: 100%;
+			max-width: 100%;
+			object-fit: cover;
+			width: 100%;
+			
+			@include tablet {
+				border-radius: 16px;
+				height: auto;
+				object-fit: initial;
+				width: auto;
+			}
+		}
+	}
+}

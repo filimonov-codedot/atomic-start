@@ -1,0 +1,151 @@
+.header {
+	background: #fff;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	
+	.container {
+		align-items: center;
+		display: flex;
+		height: 56px;
+		justify-content: space-between;
+		max-width: 1410px;
+	}
+	
+	.logo {
+		
+		img {
+			max-width: 92px;
+			
+			@include desktop {
+				max-width: initial;
+			}
+		}
+	}
+	
+	.logo-mobile {
+		
+		@include desktop {
+			display: none;
+		}
+		
+		& + .logo {
+			display: none;
+			
+			@include desktop {
+				display: block;
+			}
+		}
+	}
+	
+	&-title {
+		font: 600 15px/20px $font-MessinaSans;
+		text-align: center;
+		
+		@include desktop {
+			display: none;
+		}
+	}
+	
+	&-nav {
+		display: none;
+		
+		@include desktop {
+			display: block;
+			padding: 0 28px 0 0;
+		}
+		
+		ul {
+			display: flex;
+			
+			li {
+				padding: 0 26px;
+				
+				&.current a {
+					color: $color-red;
+				}
+				
+				a {
+					color: $color-black;
+					font-size: 15px;
+					font-weight: 600;
+					line-height: 20px;
+					
+					&:hover {
+						color: $color-red;
+					}
+				}
+			}
+		}
+	}
+	
+	&-user-nav {
+		display: none;
+		
+		@include desktop {
+			display: block;
+		}
+	}
+	
+	&-mobile-nav {
+		height: 26px;
+		position: relative;
+		width: 26px;
+		
+		&::before,
+		&::after,
+		span {
+			background: $color-black;
+			border-radius: 50%;
+			content: '';
+			height: 6px;
+			position: absolute;
+			top: calc(50% - 3px);
+			transition: all .25s ease;
+			width: 6px;
+		}
+		
+		&::before {
+			left: 0;
+		}
+		
+		&::after {
+			right: 0;
+		}
+		
+		span {
+			left: calc(50% - 3px);
+		}
+		
+		&.current {
+			
+			&::before,
+			&::after {
+				background: #fff;
+				border-radius: 0;
+				height: 2px;
+				transform: rotate(-45deg);
+				width: 24px;
+			}
+			
+			&::before {
+				left: 1px;
+				transform: rotate(45deg);
+			}
+			
+			&::after {
+				right: 1px;
+			}
+			
+			span {
+				opacity: 0;
+			}
+		}
+		
+		@include desktop {
+			display: none;
+		}
+	}
+}

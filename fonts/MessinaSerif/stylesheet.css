@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-Regular.eot');
+    src: local('Messina Serif Regular'), local('MessinaSerif-Regular'),
+        url('MessinaSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-Regular.woff2') format('woff2'),
+        url('MessinaSerif-Regular.woff') format('woff'),
+        url('MessinaSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-LightItalic.eot');
+    src: local('Messina Serif Light Italic'), local('MessinaSerif-LightItalic'),
+        url('MessinaSerif-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-LightItalic.woff2') format('woff2'),
+        url('MessinaSerif-LightItalic.woff') format('woff'),
+        url('MessinaSerif-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Serif Book';
+    src: url('MessinaSerif-Book.eot');
+    src: local('Messina Serif Book'), local('MessinaSerif-Book'),
+        url('MessinaSerif-Book.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-Book.woff2') format('woff2'),
+        url('MessinaSerif-Book.woff') format('woff'),
+        url('MessinaSerif-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-Light.eot');
+    src: local('Messina Serif Light'), local('MessinaSerif-Light'),
+        url('MessinaSerif-Light.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-Light.woff2') format('woff2'),
+        url('MessinaSerif-Light.woff') format('woff'),
+        url('MessinaSerif-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-SemiBold.eot');
+    src: local('Messina Serif SemiBold'), local('MessinaSerif-SemiBold'),
+        url('MessinaSerif-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-SemiBold.woff2') format('woff2'),
+        url('MessinaSerif-SemiBold.woff') format('woff'),
+        url('MessinaSerif-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-Bold.eot');
+    src: local('Messina Serif Bold'), local('MessinaSerif-Bold'),
+        url('MessinaSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-Bold.woff2') format('woff2'),
+        url('MessinaSerif-Bold.woff') format('woff'),
+        url('MessinaSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Serif Book';
+    src: url('MessinaSerif-BookItalic.eot');
+    src: local('Messina Serif Book Italic'), local('MessinaSerif-BookItalic'),
+        url('MessinaSerif-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-BookItalic.woff2') format('woff2'),
+        url('MessinaSerif-BookItalic.woff') format('woff'),
+        url('MessinaSerif-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-SemiBoldItalic.eot');
+    src: local('Messina Serif SemiBold Italic'), local('MessinaSerif-SemiBoldItalic'),
+        url('MessinaSerif-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-SemiBoldItalic.woff2') format('woff2'),
+        url('MessinaSerif-SemiBoldItalic.woff') format('woff'),
+        url('MessinaSerif-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-BoldItalic.eot');
+    src: local('Messina Serif Bold Italic'), local('MessinaSerif-BoldItalic'),
+        url('MessinaSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-BoldItalic.woff2') format('woff2'),
+        url('MessinaSerif-BoldItalic.woff') format('woff'),
+        url('MessinaSerif-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Serif';
+    src: url('MessinaSerif-RegularItalic.eot');
+    src: local('Messina Serif Regular Italic'), local('MessinaSerif-RegularItalic'),
+        url('MessinaSerif-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('MessinaSerif-RegularItalic.woff2') format('woff2'),
+        url('MessinaSerif-RegularItalic.woff') format('woff'),
+        url('MessinaSerif-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

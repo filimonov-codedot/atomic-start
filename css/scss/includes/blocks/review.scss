@@ -1,0 +1,220 @@
+.review {
+	background: #fff;
+	border: 1px solid #D7D7D7;
+	margin: auto 24px -64px;
+	max-width: 1200px;
+	padding: 64px 12px;
+	position: relative;
+	text-align: center;
+	z-index: 20;
+	
+	@include desktop {
+		margin: auto 24px -72px;
+		padding: 79px;
+	}
+	
+	@include media-min(1248px) {
+		margin: auto auto -72px;
+	}
+	
+	&-photo {
+		padding: 0 0 30px;
+		
+		@include desktop {
+			padding: 0 0 20px;
+		}
+		
+		img {
+			border-radius: 50%;
+			display: block;
+			height: auto;
+			margin: auto;
+			max-width: 44px;
+		}
+	}
+	
+	&-name {
+		letter-spacing: .2px;
+		font: 600 14px/20px $font-MessinaSans;
+		
+		@include desktop {
+			font-size: 17px;
+			line-height: 25px;
+		}
+	}
+	
+	&-position {
+		letter-spacing: .2px;
+		font: 14px/20px $font-MessinaSans;
+		
+		@include desktop {
+			font-size: 17px;
+			line-height: 25px;
+		}
+	}
+	
+	p {
+		font: 22px/32px $font-MessinaSans;
+		margin: 0 auto 21px;
+		max-width: 762px;
+		letter-spacing: -0.02em;
+		
+		@include desktop {
+			font-size: 30px;
+			line-height: 42px;
+		}
+	}
+	
+	&-slider {
+		position: relative;
+		
+		&-counter {
+			align-items: center;
+			border-radius: 50%;
+			bottom: 16px;
+			display: flex;
+			justify-content: center;
+			height: 50px;
+			left: 16px;
+			position: absolute;
+			width: 50px;
+			z-index: 11;
+			
+			@include desktop {
+				bottom: 20px;
+				left: 30px;
+			}
+			
+			& > svg {
+				left: 0;
+				position: absolute;
+				top: 0;
+				
+				circle {
+					stroke-dasharray: 227;
+					stroke-dashoffset: 0;
+					animation: circle 5s linear alternate forwards;
+				}
+			}
+			
+			@keyframes circle {
+				from {
+					stroke-dashoffset: 0;
+				}
+				to {
+					stroke-dashoffset: 227;
+				}
+			}
+			
+			&-next {
+				align-items: center;
+				background: rgba(#fff,.5);
+				border-radius: 50%;
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				height: 44px;
+				position: relative;
+				width: 44px;
+				z-index: 10;
+			}
+		}
+		
+		&-description {
+			align-items: center;
+			background: $color-black;
+			display: flex;
+			justify-content: center;
+			padding: 160px 0;
+			text-align: center;
+			
+			@include desktop {
+				min-height: 480px;
+			}
+			
+			p {
+				color: #fff;
+				font: 22px/32px $font-MessinaSans;
+				letter-spacing: -0.02em;
+				margin: auto;
+				max-width: 840px;
+				
+				@include desktop {
+					font-size: 32px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+	
+	&-slide {
+		height: 585px;
+		position: relative;
+		
+		.content-slider & {
+			height: 600px;
+		}
+		
+		&::before {
+			background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 100%);
+			bottom: 0;
+			content: '';
+			left: 0;
+			height: 119px;
+			opacity: 0.6;
+			position: absolute;
+			right: 0;
+		}
+		
+		& &-logo {
+			align-items: center;
+			display: flex;
+			left: 0;
+			justify-content: center;
+			padding: 0 0 15px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			
+			img {
+				display: block;
+				height: auto;
+				max-width: 90%;
+				object-fit: initial;
+				width: auto;
+				
+				@include desktop {
+					max-width: 540px;
+				}
+			}
+		}
+		
+		&-title {
+			bottom: 16px;
+			color: #fff;
+			font: 14px/20px $font-MessinaSans;
+			max-width: 170px;
+			position: absolute;
+			right: 16px;
+			text-align: right;
+			
+			@include desktop {
+				bottom: 20px;
+				font-size: 17px;
+				line-height: 25px;
+				max-width: 100%;
+				right: 30px;
+				text-align: left;
+			}
+		}
+		
+		img {
+			display: block;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+		}
+	}
+}

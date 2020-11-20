@@ -1,0 +1,53 @@
+.btn {
+	--height: 44px;
+	align-items: center;
+	background: #fff;
+	border: 1px solid rgba(215, 215, 215, 1);
+	border-radius: var(--height);
+	color: $color-black;
+	display: inline-flex;
+	font-size: 15px;
+	font-weight: 600;
+	height: var(--height);
+	justify-content: center;
+	padding: 0 24px;
+	text-align: center;
+	transition: all 0.2s ease, visibility 0s;
+	
+	&:hover {
+	
+	}
+	
+	&-small {
+		--height: 34px;
+	}
+	
+	&-large {
+		--height: 48px;
+		padding: 0 var(--height);
+		
+		@include desktop {
+			--height: 56px;
+		}
+	}
+	
+	&-red {
+		background: $color-red;
+		color: #fff;
+	}
+	
+	&-clear {
+		background: transparent;
+	}
+	
+	&-input {
+		--height: 43px;
+		padding: 0 41px;
+	}
+	
+	&[disabled] {
+		background: #D7D7D7;
+		color: #fff;
+		cursor: no-drop;
+	}
+}

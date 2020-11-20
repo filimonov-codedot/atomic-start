@@ -1,0 +1,47 @@
+.stealth-companies {
+	background: #fff;
+	padding: 120px 0 111px;
+	
+	@include desktop {
+		padding: 180px 0 190px;
+	}
+	
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px;
+	}
+	
+	h2 {
+		font: 20px/24px $font-MessinaSans;
+		letter-spacing: -0.02em;
+		margin: 0 0 31px;
+		
+		@include desktop {
+			font-size: 32px;
+			line-height: 38px;
+			margin: 0 0 43px;
+		}
+	}
+	
+	ul {
+		margin: 0 30px;
+		width: calc(100% - 60px);
+		
+		@include tablet {
+			width: calc(100% / 3 - 60px);
+		}
+		
+		li {
+			font: 15px/23px $font-MessinaSans;
+			letter-spacing: -0.01em;
+			padding: 10px 0;
+			
+			@include desktop {
+				font-size: 20px;
+				line-height: 30px;
+				letter-spacing: initial;
+			}
+		}
+	}
+}

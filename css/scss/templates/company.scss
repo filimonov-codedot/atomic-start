@@ -1,0 +1,72 @@
+.company-page {
+	padding: 50px 0 144px;
+	
+	@include desktop {
+		padding: 102px 0 212px;
+	}
+	
+	&-list {
+		position: relative;
+	}
+	
+	.company {
+		padding: 15px 0 16px;
+		
+		@include desktop {
+			padding: 20px 30px 20px 0;
+			width: 50%;
+			
+			&.current,
+			&:hover {
+				h3 {
+					font-family: $font-MessinaSansSerif;
+					font-style: italic;
+					letter-spacing: .2px;
+				}
+				
+				.company-photo {
+					opacity: 1;
+					transform: scale(1);
+				}
+				
+			}
+		}
+		
+		h3 {
+			cursor: pointer;
+			font: 300 34px/40px $font-MessinaSans;
+			letter-spacing: -0.02em;
+			margin: 0;
+			
+			@include desktop {
+				font-size: 64px;
+				line-height: 64px;
+			}
+			
+			a {
+				color: $color-black;
+			}
+		}
+		
+		&-photo {
+			display: none;
+			opacity: 0;
+			position: absolute;
+			right: 0;
+			top: -41px;
+			transform: scale(0);
+			transition: opacity .25s ease;
+			
+			@include desktop {
+				display: block;
+				width: 50%;
+			}
+			
+			img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+			}
+		}
+	}
+}

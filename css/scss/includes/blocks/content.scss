@@ -1,0 +1,82 @@
+.content {
+	margin: auto;
+	max-width: 960px;
+	padding: 80px 0 0;
+	
+	@include desktop {
+		padding: 120px 0 10px;
+	}
+	
+	h2 {
+		font: 300 34px/41px $font-MessinaSans;
+		letter-spacing: -0.02em;
+		margin: 0 0 32px;
+		
+		@include desktop {
+			font-size: 54px;
+			letter-spacing: -0.03em;
+			line-height: 56px;
+			margin: 0 0 30px;
+			text-align: center;
+		}
+		
+		i {
+			display: block;
+			
+			@include desktop {
+				display: inline;
+			}
+		}
+	}
+	
+	p {
+		font: 17px/25px $font-MessinaSans;
+		letter-spacing: -0.01em;
+		margin: 0 0 25px;
+		
+		@include desktop {
+			letter-spacing: initial;
+		}
+	}
+	
+	&-columns {
+		padding: 0 0 15px;
+		
+		@include desktop {
+			display: flex;
+			padding: 0 0 45px;
+		}
+	}
+	
+	&-column {
+		
+		@include desktop {
+			padding: 0 30px;
+		}
+	}
+	
+	&-center {
+		
+		@include desktop {
+			text-align: center;
+		}
+		
+		h3 {
+			font: 600 18px/26px $font-MessinaSans;
+			letter-spacing: -0.01em;
+			margin: 0 0 40px;
+			
+			@include desktop {
+				font-size: 20px;
+				line-height: 30px;
+				margin: 0 auto 40px;
+				max-width: 490px;
+			}
+		}
+		
+		.btn {
+			max-width: 240px;
+			width: 100%;
+		}
+	}
+}
